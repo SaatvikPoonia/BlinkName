@@ -1,8 +1,9 @@
 void setup() 
 {
-  pinMode(LED_BUILTIN,OUTPUT);  
+  pinMode(LED_BUILTIN,OUTPUT);                // setting built in led as output
 }
 
+// creating a new function for blinking dot in morse code
 void dot()
 {
   digitalWrite(LED_BUILTIN,HIGH);
@@ -11,6 +12,7 @@ void dot()
   delay(900);
 }
 
+// creating a new function for blinking dash in morse code
 void dash()
 {
   digitalWrite(LED_BUILTIN,HIGH);
@@ -62,6 +64,6 @@ void loop()
   dash();
   dot();
   dash();
-  delay(200000);
+  delay(200000);                            // given a long delay to end the code
  
 }
